@@ -67,7 +67,7 @@
 
   /* ============ HERO TYPEWRITER ============ */
   const typewriterEl = document.getElementById('typewriter');
-  const words = ['Balayage', 'Alaciados', 'Extensiones', 'Botox', 'Dermapen', 'Peinados de Novia'];
+  const words = ['Balayage', 'Alaciados', 'Extensiones', 'Peinados de Novia', 'Maquillaje', 'Faciales'];
 
   if (typewriterEl) {
     let wordIndex = 0;

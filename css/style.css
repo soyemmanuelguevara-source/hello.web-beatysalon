@@ -1,5 +1,5 @@
 /* =========================================================
-   ICONIC Beauty Salon & Clinic — Design System
+   ICONIC Beauty Salon — Design System
    Paleta: crema + dorado + café espresso (spa de lujo)
    ========================================================= */
 
@@ -146,15 +146,15 @@ svg{ width:1em; height:1em; }
 }
 .brand{ display:flex; align-items:center; gap:14px; }
 .brand-logo{
-  height: 62px; width:auto; object-fit:contain;
+  height: 82px; width:auto; object-fit:contain;
   transition: height .4s var(--ease);
   filter: drop-shadow(0 6px 14px rgba(176,141,87,.25));
 }
-.is-scrolled .brand-logo{ height: 48px; }
+.is-scrolled .brand-logo{ height: 62px; }
 .brand-text{ display:flex; flex-direction:column; line-height:1.05; }
 .brand-name{
   font-family: var(--font-display);
-  font-size: 1.85rem;
+  font-size: 2.2rem;
   font-weight:700;
   letter-spacing:.06em;
   color: var(--espresso-deep);
@@ -168,9 +168,9 @@ svg{ width:1em; height:1em; }
 }
 
 .main-nav{ display:flex; align-items:center; gap: 34px; }
-.main-nav ul{ display:flex; align-items:center; gap: 30px; }
+.main-nav ul{ display:flex; align-items:center; gap: 32px; }
 .nav-link{
-  position:relative; font-weight:500; font-size:.95rem; color: var(--text);
+  position:relative; font-weight:600; font-size:1.12rem; color: var(--text);
   padding: 4px 0;
 }
 .nav-link::after{
@@ -267,6 +267,21 @@ svg{ width:1em; height:1em; }
   font-size: 1.08rem; color: var(--text-soft); max-width: 560px; margin-bottom: 40px;
 }
 .hero-cta{ display:flex; flex-wrap:wrap; gap: 18px; }
+
+.hero-social{
+  display:flex; align-items:center; flex-wrap:wrap; gap: 16px;
+  margin-top: 46px; padding-top: 26px;
+  border-top: 1px solid var(--border);
+}
+.hero-social-label{
+  font-size:.76rem; letter-spacing:.18em; text-transform:uppercase;
+  color: var(--text-soft); font-weight:600;
+}
+.hero-social .social-links a{
+  width:40px; height:40px;
+  background: rgba(255,253,249,.55);
+  backdrop-filter: blur(6px);
+}
 
 .scroll-indicator{
   position:absolute; bottom: 36px; left:50%; transform: translateX(-50%);
@@ -468,6 +483,8 @@ main > section{ padding: 110px 0; position:relative; }
 .contact-list{ display:flex; flex-direction:column; gap: 20px; margin: 32px 0; }
 .contact-list li{ display:flex; align-items:flex-start; gap: 14px; font-size:.98rem; }
 .contact-list li svg{ width:22px; height:22px; color: var(--gold-dark); flex-shrink:0; margin-top:2px; }
+.map-link{ color: var(--gold-dark); font-weight:600; text-decoration: underline; text-underline-offset: 3px; }
+.map-link:hover{ color: var(--espresso); }
 .social-links{ display:flex; gap: 14px; }
 .social-links a{
   width:44px; height:44px; border-radius:50%;
@@ -545,7 +562,7 @@ main > section{ padding: 110px 0; position:relative; }
   }
   .main-nav.is-open{ transform: translateX(0); }
   .main-nav ul{ flex-direction:column; align-items:flex-start; gap: 26px; width:100%; }
-  .nav-link{ font-size:1.15rem; }
+  .nav-link{ font-size:1.3rem; }
   .btn-nav{ width:100%; text-align:center; }
   .nav-toggle{ display:flex; }
 
@@ -553,14 +570,16 @@ main > section{ padding: 110px 0; position:relative; }
   .hero{ padding: 140px 0 80px; min-height: unset; }
   .hero-cta{ flex-direction:column; align-items:stretch; }
   .hero-cta .btn{ width:100%; }
+  .hero-social{ gap: 12px; }
+  .hero-social .social-links{ gap: 10px; }
   .about-media-badge{ right: 10px; bottom:-20px; }
 }
 
 @media (max-width: 640px){
-  .brand-logo{ height: 50px; }
-  .is-scrolled .brand-logo{ height: 40px; }
-  .brand-name{ font-size: 1.4rem; }
-  .brand-tagline{ font-size: .6rem; letter-spacing:.16em; }
+  .brand-logo{ height: 62px; }
+  .is-scrolled .brand-logo{ height: 50px; }
+  .brand-name{ font-size: 1.65rem; }
+  .brand-tagline{ font-size: .68rem; letter-spacing:.16em; }
   .features-grid{ grid-template-columns: 1fr; }
   .gallery-grid{ grid-template-columns: 1fr 1fr; gap: 14px; }
   .footer-grid{ grid-template-columns: 1fr; gap: 36px; }
